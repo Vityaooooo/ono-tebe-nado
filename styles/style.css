@@ -267,7 +267,7 @@
     z-index: 1;
     text-decoration: underline;
     font-size: 22px;
-    line-height: 26.4px;
+    /* line-height: 26.4px; */
     line-height: 1.2em;
     text-transform: uppercase;
 }
