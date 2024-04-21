@@ -3,7 +3,7 @@
 }
 
 .header {
-    min-height: 293px;
+    padding: 91px 0 89px;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 2fr;
     justify-items: center;
@@ -69,7 +69,9 @@
 }
 
 .cover {
-    background-image: url('https://vityaooooo.github.io/ono-tebe-nado/images/cover.jpg');
+    background-image: url('/images/cover.jpg');
+    background-position: center;
+    background-size: cover;
     color: white;
     margin-bottom: 179px;
     position: relative;
@@ -81,6 +83,8 @@
     height: 100%;
     width: 100%;
     z-index: 0;
+    top: 0;
+    left: 0;
 }
 
 .cover__title {
@@ -92,16 +96,18 @@
     font-size: 100px;
     text-transform: uppercase;
     font-weight: bold;
-    /* line-height: 115px; */
-    line-height: 1.15em;
     /* letter-spacing: .3em; */
     letter-spacing: 30px;
     margin-bottom: 135px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .aligned-text {
     display: block;
-    margin-bottom: 20px;
+     /* line-height: 115px; */
+     line-height: 1.15em;
 }
 
 .aligned-text_center {
@@ -144,13 +150,14 @@
 .bet-button {
     background: transparent;
     color: white;
-    border: 1px white solid;
+    border: 1px currentColor solid;
     text-transform: uppercase;
     font-size: 22px;
     text-align: center;
     padding: 12px 32px 11px 31px;
     /* line-height: 25.83px; */
     line-height: 1.2em;
+    font-family: Raleway, sans-serif;
 }
 
 /* Контейнер обертка */
@@ -160,8 +167,7 @@
 }
 
 .lots {
-    min-height: 692px;
-    margin-bottom: 181px;
+    margin-bottom: 182px;
 }
 
 .section-heading {
@@ -212,11 +218,6 @@
     justify-content: space-between;
 }
 
-.card .overlay {
-    top: 0;
-    left: 0;
-}
-
 .card_background {
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,15 +225,15 @@
 }
 
 .card_type_film {
-    background-image: url('https://vityaooooo.github.io/ono-tebe-nado/images/card-lot-01.jpg');
+    background-image: url('/images/card-lot-01.jpg');
 }
 
 .card_type_book {
-    background-image: url('https://vityaooooo.github.io/ono-tebe-nado/images/card-lot-02.jpg');
+    background-image: url('/images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-    background-image: url('https://vityaooooo.github.io/ono-tebe-nado/images/card-lot-03.jpg');
+    background-image: url('/images/card-lot-03.jpg');
 }
 
 .card__title {
@@ -265,15 +266,13 @@
 }
 
 .about {
-    min-height: 595px;
-    margin-bottom: 146px;
+    margin-bottom: 181px;
 }
 
 .about__column {
     display: grid;
-    /* TODO: подумать как автоматизировать гриды */
     grid-template-columns: 334px 1fr;
-    grid-template-rows: 248px 312px;
+    /* grid-template-rows: 248px 312px; */
     column-gap: 25px;
 }
 
@@ -284,22 +283,20 @@
     width: 240px;
     height: 240px;
     justify-self: center;
-    grid-row: span 2
+    /* grid-row: span 2 */
 }
 
 .about__title {
     align-self: center;
+    padding-top: 10px;
 }
 
 .about__text {
+    padding-top: 8px;
     grid-column: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.margin-bottom-25 {
-    margin-bottom: 25px;
+    gap: 24px;
 }
 
 .footer {
@@ -328,16 +325,11 @@
 .footer__social-list {
     list-style: none;
     display: flex;
-    max-width: 240px;
+    gap: 48px;
 }
 
-/* TODO: придумать как сделать иконки без задавания фиксированных размеров */
 .footer__social-link {
     display: block;
-    padding-right: 48px;
-}
-
-.footer__social-icon {
-    margin-right: 48px;
+    width: 48px;
 }
 
