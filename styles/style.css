@@ -48,7 +48,6 @@
     text-decoration: none;
 }
 
-
 .header__logo {
     padding: 2px 9px 2px 12px;
 }
@@ -272,7 +271,6 @@
 .about__column {
     display: grid;
     grid-template-columns: 334px 1fr;
-    /* grid-template-rows: 248px 312px; */
     column-gap: 25px;
 }
 
